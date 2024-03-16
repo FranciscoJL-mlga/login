@@ -6,28 +6,122 @@
  * @email       : paco.mlga@gmail.com
  * @clase       : 1ºDAW
  *---------------------------------------------**/
-#container{
-  display: flex;/*Display flexible para colocar contenidos*/
-  justify-content: center;/*centrar en horizontal*/
-  align-items: center;/*centrar en vertical*/
-  height: 100vh;
+/**----------------------------------------------
+ * ?                    ABOUT
+ * @author      : Francisco Jiménez López   
+ * @email       : paco.mlga@gmail.com
+ * @clase       : 1ºDAW
+ *---------------------------------------------**/
+ .w-90{
+  width: 90% !important;
+}
+.error-message {
+  background-color: #f8d7da; /* Color de fondo */
+  color: #721c24; /* Color de texto */
+  padding: 10px; /* Espacio interno */
+  border: 1px solid #f5c6cb; /* Borde */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-bottom: 10px; /* Margen inferior */
 }
 
-table{border-collapse: collapse;
-      width: 80%;
-    }
 
-td,th{
-  padding: 5px;
-  border:1px solid black;
-  width: 16,6%;
-  text-align: center;
+#book_list{
+  background: rgba(0,0,0,.75);
+  width: 92.5%;
+  height: 385px;
+  left: 25px;
+  overflow-y: scroll;
+  border-radius: 7.5px;
+  &::-webkit-scrollbar {
+      display: none;
+  }
+  table{
+      background: rgba(256,256,256,.75);
+      border-radius: 7.5px;
+      
+      thead{
+          color: #1a1a1a;
+      }
+      tbody{
+          color: #000000;
+      }
+      
+  }
+}
+
+#insertion_section{
+  background:rgba(230, 225, 225, 0.313);
+  border-radius: 7.5px;
+  padding: 15px 15px 20px 10px;
+  width: 100%;
+  position: relative;
+  
+  
+ 
+  .form-group{
+      width: 90%;
+      margin-left: 10%;
+
+      input,label{
+          width: 90%;
+      }
+      input{
+          opacity: 0.8;
+          transition: .5s;
+          outline: none;
+      }
+
+      #two-section{
+         
+          margin-left: -7.5%;
+          input{
+              width: 85%;
+             
+          }
+      }
+      button{
+          margin-left: -5%;
+      }
+
+  }
 
 }
-#recreo{letter-spacing: 4em;
-background-color: rgb(192, 255, 255);}
+
+body{
+  padding: 0;
+  margin: 0;
+ 
+  background-image: url("https://cdn.wallpapersafari.com/91/90/Bmhy8U.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  height: 110vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
+/*     display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+/* 
+Wallpaper
+Source: https://wallpapersafari.com/hd-library-wallpaper/ 
+*/
+#one-page{
 
 
 
-/***********************botones**************************************/
+  
+}
 
+h1{
+  font-size: 50px;
+}
+
+@media (max-width: 976px){
+  #one-page{
+      height: 150%;
+      background-image: url("https://cdn.wallpapersafari.com/91/90/Bmhy8U.jpg");
+      background-size: auto;
+      -webkit-background-size: auto;
+      -moz-background-size: auto;
+      -o-background-size: auto ; 
+  }
+}
