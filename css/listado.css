@@ -1,0 +1,33 @@
+/*****************************************************/
+
+/**----------------------------------------------
+ * ?                    ABOUT
+ * @author      : Francisco Jiménez López   
+ * @email       : paco.mlga@gmail.com
+ * @clase       : 1ºDAW
+ *---------------------------------------------**/
+#container{
+  display: flex;/*Display flexible para colocar contenidos*/
+  justify-content: center;/*centrar en horizontal*/
+  align-items: center;/*centrar en vertical*/
+  height: 100vh;
+}
+
+table{border-collapse: collapse;
+      width: 80%;
+    }
+
+td,th{
+  padding: 5px;
+  border:1px solid black;
+  width: 16,6%;
+  text-align: center;
+
+}
+#recreo{letter-spacing: 4em;
+background-color: rgb(192, 255, 255);}
+
+
+
+/***********************botones**************************************/
+

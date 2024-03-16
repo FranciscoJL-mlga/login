@@ -1,0 +1,103 @@
+/****************************************************************/
+
+
+/**----------------------------------------------
+ * ?                    ABOUT
+ * @author      : Francisco Jiménez López   
+ * @email       : paco.mlga@gmail.com
+ * @clase       : 1ºDAW
+ *---------------------------------------------**/
+body{
+  background-image:url(../images/taberna.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+}
+
+
+h1{
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom:10% ;
+  color:#000000;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+ 
+}
+#container{
+  overflow-x: auto;
+  width: 80%;
+ 
+  margin: auto;
+  
+
+}
+
+table {
+  border-collapse: collapse;
+  background-color:rgba(255, 255, 255, 0.174);
+  width: 100%;
+  
+
+}
+  
+
+
+th, td {
+  font-size: 1.5em;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #f1f1f1;
+  color:#000000;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+ 
+}
+
+tr:first-child{background-image: url(https://previews.123rf.com/images/barashenkov/barashenkov1709/barashenkov170900023/85058304-textura-met%C3%A1lica-medieval-museo-de-metal-viejo-puerta-con-clavos.jpg);
+              color: white
+              ;}
+
+tr:hover {background-color: rgba(255, 240, 80, 0.575);
+            cursor: pointer;}
+
+/******************************************************************/
+
+
+.btn {
+
+  color: white;
+  padding: 10px;
+  margin-right:2px ;
+  cursor: pointer;
+}
+
+.success {background-color: #04AA6D;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff990080;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336ac;} /* Red */ 
+.danger:hover {background: #da190bf8;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
+
+/**************responsividad de la tabla*************************/
+
+/***********************************************/
+
+
+
+tr:nth-child(even) {background-color: #f2f2f237;}
+tr:nth-child(even):hover {background-color:rgba(255, 240, 80, 0.575) }
+
+
+
+
+/***********************************************/

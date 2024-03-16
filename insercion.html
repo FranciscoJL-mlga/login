@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./images/favicon.ico">
+ 
+
+    <title>Creacion de personajes</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+    <!-- Pages -->
+
+    <link rel="stylesheet" href="./css/Insercion.css"></LINK>
+    
+
+ 
+</head>
+<body>
+
+    <section id="one-page">
+        <div class="container">
+            <!-- Title -->
+            <div class="row">
+                <h1 class="text-light">Creacion de personajes</h1>
+            </div>
+
+            <div class="row mt-4 container">
+                <!-- insertion section -->
+                <div class="col-lg-5" id="insertion_section">
+                    <form class="form-group justify-content-center">
+                        <div class="row" id="name-section">
+                            <label for="bookName" class="text-light">Name</label>
+                            <input type="text" class="form-control" id="bookName">
+                        </div>
+
+                        <div class="row" id="author-section">
+                            <label for="classSelect" class="text-light">Clase</label>
+                            <select class="form-control w-90" id="classSelect">
+                                <option value="seleccion">Elegir</option>
+                                <option value="Aventurero">Aventurero</option>
+                                <option value="Ranger">Ranger</option>
+                                <option value="Guerrero">Guerrero</option>
+                                <!-- Agrega más opciones según sea necesario -->
+                            </select>
+                            <span id="classError" style="color: red;">*</span><br>
+                        </div>
+                        <div class="row" id="publisher-section">
+                          
+                          <label for="raceSelect" class="text-light">Raza</label>
+                          <select class="form-control w-90" id="raceSelect">
+                              <option value="seleccion">Elegir</option>
+                              <option value="Hobbit">Hobbit</option>
+                              <option value="Elfo">Elfo</option>
+                              <option value="Enano">Enano</option>
+                              <option value="Humano">Humano</option>
+                              <!-- Agrega más opciones según sea necesario -->
+                          </select>
+                          <span id="raceError" style="color: red;">*</span><br>
+                        </div>
+                        <div class="row" id="two-section">
+                            <div class="col-6">
+                                <label for="numberPage" class="text-light">Nivel</label>
+                                <input type="number" class="form-control" id="numberPage">
+                            </div>
+                            
+                        </div>
+                        <div class="add-button mt-4">
+                            <button type="button" class="btn btn-danger btn-block" id="add" >Crear</button>
+                        </div>
+                      </from>
+                </div>
+
+                <!-- Book List -->
+                <div class="col-lg-7" id="book_list">
+                    <table class="table table-borderless table-striped mt-3 ">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Raza</th>
+                                <th scope="col">Clase</th>
+                                <th scope="col">Nivel</th>
+                                <th scope="col">Borrar</th>
+                             
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabs">
+                            <tr class="tab">
+                                <th scope="row">
+                                  Frodo Bolsón</td>
+                                  <td>Hobbit</td>
+                                 
+                                  <td>Aventurero</td>
+                                  <td>5</td>
+                                
+                                <td>
+                                  <button type="button" class="close" aria-label="Close">
+                                    <span aria-hidden="true">X</span>
+                                  </button>
+                                </td>
+                            </tr>
+                            <tr class="tab">
+                                <th scope="row"> Legolas</th>
+                                  <td>Elfo</td>
+                                  <td>Ranger</td>
+                                  <td>15</td>
+                               
+                                <td>
+                                  <button type="button" class="close" aria-label="Close">
+                                    <span aria-hidden="true">X</span>
+                                  </button>
+                                </td>
+                            </tr>
+                            <tr class="tab">
+                                <th scope="row">Gimli</th>
+                                <td>Enano  </td>
+                                <td>Guerrero</td>
+                                <td>15</td>
+                               
+                                <td>
+                                  <button type="button" class="close" aria-label="Close">
+                                    <span aria-hidden="true">X</span>
+                                  </button>
+                                </td>
+                            </tr>
+                            <tr class="tab">
+                                <th scope="row">Aragon</th>
+                                <td>Humano</td>
+                                <td>Guerrero</td>
+                                <td>18</td>
+                                
+                                <td>
+                                  <button type="button" class="close" aria-label="Close">
+                                    <span aria-hidden="true">X</span>
+                                  </button>
+                                </td>
+                            </tr>
+                          
+                            </tr>
+
+
+
+                            <tr class="tab">
+                              <th scope="row">  </th>
+                              <td>   </td>
+                              <td>   </td>
+                              <td>   </td>
+                              
+                              <td>
+                             
+                              </td>
+                          </tr>
+                          <tr class="tab">
+                            <th scope="row">  </th>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>   </td>
+                            
+                            <td>
+                           
+                            </td>
+                        </tr>
+                        <tr class="tab">
+                          <th scope="row">  </th>
+                          <td>   </td>
+                          <td>   </td>
+                          <td>   </td>
+                          <td></td>
+                      </tr>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/insercion.js"></script>
+</body>
+</html>

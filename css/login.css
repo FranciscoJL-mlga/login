@@ -1,0 +1,192 @@
+/*******************************************/
+
+/**----------------------------------------------
+ * ?                    ABOUT
+ * @author      : Francisco Jiménez López   
+ * @email       : paco.mlga@gmail.com
+ * @clase       : 1ºDAW
+ *---------------------------------------------**/
+body{
+  background-image: url('../images/fondologin.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-text { visibility:hidden;}
+body,
+.signin {
+  background-color: #d3d3d3;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.login {
+  position: relative;
+  margin: auto;
+  padding: 12% 6%;
+  background-color: #ffffffda;
+  color: #000;
+  font-size: 1.5em;
+  box-shadow: 0px 30px 60px 5px #000;
+  border-radius: 10%;
+}
+
+
+
+
+
+.active {
+  border-bottom: 2px solid #1162ed62;
+}
+
+
+h2 {
+  padding-left: 12px;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 100;
+}
+
+h2:first-child {
+  padding-left: 0px;
+}
+
+span {
+  text-transform: uppercase;
+  font-size: 1em;
+
+  display: inline-block;
+  position: relative;
+  top: -65px;
+  transition: all 0.5s ease-in-out;
+}
+
+.email {
+  border: none;
+  width: 89%;
+  padding: 10px 20px;
+  display: block;
+  height: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(182, 159, 159, 0.89);
+  overflow: hidden;
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.email:focus {
+  outline: 0;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.text:focus + span {
+  opacity: 0.6;
+}
+
+input[type="email"],
+input[type="password"] {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+}
+
+
+
+input {
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+h2,
+span,
+.custom-checkbox {
+  margin-left: 20px;
+}
+
+.custom-checkbox {
+
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  top: 6px;
+}
+
+.custom-checkbox:checked {
+  background-color: rgba(17, 98, 237, 0.348);
+}
+
+.custom-checkbox:checked:after {
+  content: '\2714';
+  font-size: 10px;
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  color: #fff;
+}
+
+.custom-checkbox:focus {
+  outline: none;
+}
+
+label {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.signin {
+  background-color: #1162ed98;
+  color: #FFF;
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+}
+
+.signin:hover {
+  background: #4082f5;
+  box-shadow: 0px 4px 35px -5px #4082f5;
+  cursor: pointer;
+}
+
+.signin:focus {
+  outline: none;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  top: 85px;
+  position: relative;
+}
+
+a {
+  text-align: center;
+  display: block;
+  top: 25%;
+  position: relative;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+}
+
+
