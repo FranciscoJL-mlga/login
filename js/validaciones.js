@@ -35,7 +35,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
   // Si hay errores, mostrar todos los mensajes de ayuda y si no confirma el envio de datos
   if (errores.length == 0) {
  
-   window.location.href = "listado.html" ;
+   window.location.href = "Listado.html" ;
     
     return;
   }
