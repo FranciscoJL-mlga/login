@@ -50,7 +50,7 @@ $(document).ready(function () {
             alert(errors.join("\n"));
             return;
         }else{
-            window.location.href = "Listado.html" ;
+            window.location.href = "listado.html" ;
     
 
         }
